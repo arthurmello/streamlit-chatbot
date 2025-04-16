@@ -23,10 +23,16 @@ This is a simple chatbot application built using Streamlit and OpenAI's GPT-3.5-
    cd streamlit-chatbot
    ```
 
-2. **Install the required packages:**
+2. **Install Poetry (if you haven't already):**
 
    ```bash
-   pip install -r requirements.txt
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   poetry install
    ```
 
 3. **Set up your OpenAI API key:**
@@ -41,19 +47,10 @@ This is a simple chatbot application built using Streamlit and OpenAI's GPT-3.5-
 4. **Run the application:**
 
    ```bash
-   streamlit run app.py
+   poetry run streamlit run app.py
    ```
 
 ## Usage
 
 - Open your web browser and go to `http://localhost:8501` to interact with the chatbot.
 - Type your message in the input box and press enter to receive a response from the AI assistant.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Acknowledgments
-
-- [Streamlit](https://streamlit.io/)
-- [OpenAI](https://openai.com/)
